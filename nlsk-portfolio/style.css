@@ -84,14 +84,20 @@ section {
     margin: 1.2rem 0 0.5rem 0;
     flex-wrap: wrap;
 }
+.tech-logos .tech-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 .tech-logo {
-    height: 40px;
+    height: 48px;
     width: auto;
     filter: drop-shadow(0 2px 6px rgba(0,0,0,0.08));
     transition: transform 0.2s;
 }
 .tech-logo:hover {
-    transform: scale(1.12);
+    transform: scale(1.15);
     filter: drop-shadow(0 4px 12px rgba(99,102,241,0.18));
 }
 /* Remove orange line under header subtitle only in header */
@@ -984,4 +990,8 @@ h3 {
 /* Progress bar default hidden width until JS sets it */
 .progress-bar[data-width] {
     width: 0;
+}
+
+@media (max-width: 420px) {
+    .tech-logo { height: 40px; }
 }
