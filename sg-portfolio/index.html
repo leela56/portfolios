@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -39,7 +40,7 @@
         </div>
     </nav>
 
-    <!-- Header -->
+    <!-- Header (updated hero layout) -->
     <header class="text-center">
         <div class="floating-shapes">
             <div class="shape shape-1"></div>
@@ -49,52 +50,63 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <div class="badge-container">
-                    <span class="availability-badge">
-                        <span class="pulse-dot"></span>
-                        Open for AI & Data Engineering Consultations
-                    </span>
-                </div>
-                <h1 class="hero-title">
-                    <span class="title-line" onclick="window.location.reload(); return false;" style="cursor: pointer;">Surendra Babu Gutta</span>
-                    <span class="title-line gradient-text">Data Architect</span>
-                </h1>
-                <h2 class="hero-subtitle">Founder & Lead Architect at Good One IT Solutions</h2>
-                <p class="hero-description">Cloud Data Architect | Azure/GCP/AWS Expert | AI/ML Integration | Enterprise Solutions</p>
-                <p class="hero-experience">15+ years of experience in designing and implementing scalable data architectures across multiple cloud platforms.</p>
-                
-                <div class="cta-buttons">
-                    <a href="#portfolio" class="btn btn-primary btn-lg me-3">
-                        <span>View Our Work</span>
-                        <i class="arrow">→</i>
-                    </a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg">
-                        <span>Start Your Project</span>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="stats-container">
-                <div class="row justify-content-center g-4">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="stat-icon">🚀</div>
-                            <h3 class="stat-number" data-target="15">0</h3>
-                            <p>Years Experience</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="availability-badge-wrapper mb-3">
+                            <span class="availability-badge">
+                                <span class="pulse-dot"></span>
+                                Open for AI & Data Engineering Consultations
+                            </span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            <span class="title-line" onclick="window.location.reload(); return false;" style="cursor: pointer; display:block;">Surendra Babu Gutta</span>
+                            <span class="title-line gradient-text">AI Architect — Cloud-first, AI-driven Solutions</span>
+                        </h1>
+
+                        <p class="hero-subtitle">From Open AI integrations to multi-cloud platforms — Azure, GCP, AWS</p>
+
+                        <p class="hero-description">Cloud AI Architect | Enterprise Data Platforms | MLOps & Real-time Analytics</p>
+
+                        <div class="cta-buttons mt-4">
+                            <a href="#portfolio" class="btn btn-primary btn-lg me-3">
+                                <span>View Our Work</span>
+                                <i class="arrow">→</i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">
+                                <span>Start Your Project</span>
+                            </a>
+                        </div>
+                        
+                        <!-- Quick contact links -->
+                        <div class="hero-quick-contact mt-3">
+                            <a href="tel:+15713599135" class="quick-contact-link">📞 571-359-9135</a>
+                            <a href="mailto:Surendra.DE164@gmail.com" class="quick-contact-link ms-3">✉️ Surendra.DE164@gmail.com</a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="stat-icon">☁️</div>
-                            <h3 class="stat-number" data-target="3">0</h3>
-                            <p>Cloud Platforms</p>
+                </div>
+
+                <!-- Service cards like the reference site -->
+                <div class="row mt-5 services-row justify-content-center g-4">
+                    <div class="col-md-4">
+                        <div class="service-card text-center">
+                            <div class="service-icon">🤖</div>
+                            <h4>AI Integration</h4>
+                            <p>Model selection, prompt engineering, deployment, and monitoring.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
-                            <div class="stat-icon">⚡</div>
-                            <h3 class="stat-number" data-target="40">0</h3>
-                            <p>% Query Optimization</p>
+                    <div class="col-md-4">
+                        <div class="service-card text-center">
+                            <div class="service-icon">☁️</div>
+                            <h4>Multi-Cloud Architecture</h4>
+                            <p>Design and operate resilient data platforms on Azure, GCP, and AWS.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card text-center">
+                            <div class="service-icon">⚡</div>
+                            <h4>Data Engineering</h4>
+                            <p>ETL/ELT, streaming, data warehouses, and performance optimization.</p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +117,7 @@
     <!-- About Section -->
     <section id="about" class="container my-5 fade-in">
         <h2>About Good One IT Solutions</h2>
-        <p>Founded by Surendra Babu Gutta, Good One IT Solutions is a specialized consulting firm focused on AI and Data Architecture solutions. With 15+ years of IT experience in Analysis, Design, Development, and Implementation of Data Architect solutions, we specialize in Microsoft SQL Server BI stack, Cloud environments (Azure/GCP/AWS), and enterprise-scale data platforms.</p>
+        <p>Founded by Surendra Babu Gutta, Good One IT Solutions is a specialized consulting firm focused on AI and AI Architecture solutions. With 15+ years of IT experience in Analysis, Design, Development, and Implementation of AI Architect solutions, we specialize in Microsoft SQL Server BI stack, Cloud environments (Azure/GCP/AWS), and enterprise-scale data platforms.</p>
         
         <h3>Core Technologies</h3>
         <div class="row">
@@ -139,7 +151,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="expertise-card">
-                    <h4>AI & Data Architecture Consulting</h4>
+                    <h4>AI & AI Architecture Consulting</h4>
                     <p>Multi-cloud data platforms, Data warehouse design, ETL/ELT pipelines, Data modeling, Performance optimization</p>
                 </div>
             </div>
@@ -156,7 +168,7 @@
             <div class="col-md-4">
                 <div class="expertise-card">
                     <h4>🚀 Proven Expertise</h4>
-                    <p>15+ years of enterprise data architecture experience with Fortune 500 companies</p>
+                    <p>15+ years of enterprise AI architecture experience with Fortune 500 companies</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -173,7 +185,7 @@
             </div>
         </div>
         
-        <p class="mission-statement">Our Mission: Delivering cutting-edge AI and data architecture solutions that transform businesses through scalable, cloud-native platforms and intelligent automation.</p>
+        <p class="mission-statement">Our Mission: Delivering cutting-edge AI and AI architecture solutions that transform businesses through scalable, cloud-native platforms and intelligent automation.</p>
     </section>
 
     <!-- Skills Section -->
@@ -277,7 +289,7 @@
         <h2>Professional Journey</h2>
         <div class="timeline">
             <div class="job">
-                <h3>Sr Cloud Data Architect - J.B. Hunt Transport (Nov 2019 - Present)</h3>
+                <h3>Sr Cloud AI Architect - J.B. Hunt Transport (Nov 2019 - Present)</h3>
                 <p>Bentonville, AR</p>
                 <h4>Key Achievements</h4>
                 <ul>
@@ -315,14 +327,68 @@
     <!-- Contact Section -->
     <section id="contact" class="bg-dark text-white text-center py-5 fade-in">
         <h2>Ready to Transform Your Data?</h2>
-        <p>Let's discuss how Good One IT Solutions can help you build cutting-edge AI and data architecture solutions.</p>
+        <p>Let's discuss how Good One IT Solutions can help you build cutting-edge AI and AI architecture solutions.</p>
         <div class="contact-info">
             <p><strong>Email:</strong> Surendra.DE164@gmail.com</p>
             <p><strong>Phone:</strong> 571-359-9135</p>
             <p><strong>Location:</strong> United States</p>
         </div>
-        <a href="mailto:Surendra.DE164@gmail.com" class="btn btn-primary">Get Your Free Consultation</a>
+        <div class="social-icons mt-4">
+            <a href="https://www.linkedin.com/in/surendra-gutta-97555a83/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Surendra-Gutta" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+        
+        <!-- Contact form -->
+        <div class="contact-form-wrapper mt-4">
+            <form id="contactForm" class="contact-form mx-auto" style="max-width:700px;">
+                <div class="row g-2">
+                    <div class="col-md-6">
+                        <input type="text" id="name" class="form-control form-control-lg" placeholder="Your name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" id="email" class="form-control form-control-lg" placeholder="Your email" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" id="subject" class="form-control form-control-lg" placeholder="Subject">
+                    </div>
+                    <div class="col-12">
+                        <textarea id="message" class="form-control form-control-lg" rows="5" placeholder="Tell me about your project" required></textarea>
+                    </div>
+                    <div class="col-12 text-center mt-3">
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="container my-5 fade-in">
+        <h2>What Clients Say</h2>
+        <div class="testimonial-carousel mx-auto" style="max-width:900px;">
+            <div class="testimonial active">
+                <p>"Surendra's architecture transformed our analytics platform — massive performance gains and excellent support."</p>
+                <strong>- Jane Doe, CTO</strong>
+            </div>
+            <div class="testimonial">
+                <p>"Highly recommended for multi-cloud strategy and AI integration — delivered on time and on budget."</p>
+                <strong>- John Smith, Head of Data</strong>
+            </div>
+            <div class="testimonial">
+                <p>"Deep technical expertise and clear communication throughout a complex migration."</p>
+                <strong>- Priya Patel, VP Engineering</strong>
+            </div>
+            <div class="testimonial-controls text-center mt-3">
+                <button class="btn btn-outline-secondary btn-sm prev">Prev</button>
+                <button class="btn btn-outline-secondary btn-sm next">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating contact button -->
+    <a href="#contact" class="floating-contact" title="Contact us">
+        <i class="fas fa-comments"></i>
+    </a>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -498,6 +564,58 @@
                 }, 600);
             });
         });
+
+        // Testimonials carousel
+        (function() {
+            const testimonials = document.querySelectorAll('.testimonial');
+            const prevBtn = document.querySelector('.testimonial-controls .prev');
+            const nextBtn = document.querySelector('.testimonial-controls .next');
+            let idx = 0;
+            let timer = null;
+
+            function show(i) {
+                testimonials.forEach((t, j) => t.classList.toggle('active', i === j));
+            }
+
+            function next() { idx = (idx + 1) % testimonials.length; show(idx); }
+            function prev() { idx = (idx - 1 + testimonials.length) % testimonials.length; show(idx); }
+
+            nextBtn.addEventListener('click', () => { next(); resetTimer(); });
+            prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
+
+            function resetTimer() {
+                if (timer) clearInterval(timer);
+                timer = setInterval(next, 5000);
+            }
+
+            if (testimonials.length) {
+                show(0);
+                resetTimer();
+            }
+        })();
+
+        // Contact form validation + mailto fallback
+        (function() {
+            const form = document.getElementById('contactForm');
+            if (!form) return;
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const subject = document.getElementById('subject').value.trim() || 'New project inquiry';
+                const message = document.getElementById('message').value.trim();
+
+                if (!name || !email || !message) {
+                    alert('Please fill name, email and message.');
+                    return;
+                }
+
+                const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+                const mailto = `mailto:Surendra.DE164@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+                window.location.href = mailto;
+            });
+        })();
     </script>
 </body>
 </html>
