@@ -210,7 +210,7 @@ h4::after {
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(99, 102, 241, 0.1);
     transition: all 0.3s ease;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .navbar-brand {
@@ -1074,22 +1074,10 @@ h3 {
 h2::after,
 h3::after,
 h4::after {
-    content: "" !important;
-    display: block !important;
-    width: 80px !important;
-    height: 4px !important;
-    margin: 0.6rem auto 1.2rem auto !important;
-    background: var(--success-color) !important;
-    border-radius: 6px !important;
+    content: none !important;
 }
 
 /* Ensure About heading also has the green underline (override earlier removal) */
 #about h2::after {
-    content: "" !important;
-    display: block !important;
-    width: 80px !important;
-    height: 4px !important;
-    margin: 0.6rem auto 1.2rem auto !important;
-    background: var(--success-color) !important;
-    border-radius: 6px !important;
+    content: none !important;
 }
